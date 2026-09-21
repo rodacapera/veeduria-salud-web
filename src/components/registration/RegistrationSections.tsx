@@ -3,6 +3,7 @@ import logo from "../../assets/logo-veesipp-colombia.png";
 import proshareLogo from "../../assets/proshare-logo.jpeg";
 import mentalHealthImage from "../../../public/congreso-salud-mental.png";
 import personeriaImage from "../../../public/personeria-ibague.png";
+import { strategicAllies } from "../../data/strategicAllies";
 import { Reveal, Stagger, StaggerItem, VisualReveal } from "../ui/Motion";
 
 export function RegistrationHero() {
@@ -234,7 +235,12 @@ export function RegistrationEventInfo() {
         </div>
         <div className="ref-sponsors">
           <strong>Aliados y patrocinadores</strong>
-          <span>Espacios reservados para los logos de patrocinadores</span>
+          <div className="ref-sponsor-logos" aria-label="Aliados y patrocinadores">
+            <img src={proshareLogo.src} alt="ProShare" />
+            {strategicAllies.map((ally) => (
+              <img key={ally.name} src={ally.image} alt={ally.name} />
+            ))}
+          </div>
         </div>
         <div className="ref-legal">
           <u>Política de Privacidad</u>

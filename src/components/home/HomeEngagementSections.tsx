@@ -7,6 +7,7 @@ import PqrsForm from "./PqrsForm";
 import PqrsStatusForm from "./PqrsStatusForm";
 import { HomeIllustration, TagGroup } from "./HomeShared";
 import { principles, values } from "../../data/homeContent";
+import { strategicAllies } from "../../data/strategicAllies";
 
 export function MentalHealthCta() {
   return <section className="section"><div className="page-wrap cta"><div className="stack"><p className="eyebrow">Salud mental comunitaria</p><h2 className="heading">La salud mental también es un derecho.</h2><p className="body-copy">La salud mental forma parte integral del derecho a la salud. Trabajamos por su promoción, prevención y fortalecimiento comunitario desde una mirada humana, respetuosa y esperanzadora.</p><Link className="button button--coral" href="/salud-mental">Conoce más <span>→</span></Link></div><div className="cta-visual-stack"><HomeIllustration index={0} alt="Bienestar y cuidado comunitario" /><div className="cta-badge">Cuidar la salud mental es cuidar la vida.</div></div></div></section>;
@@ -17,7 +18,7 @@ export function ParticipationSection() {
 }
 
 export function AlliesSection() {
-  return <section className="section allies-section"><div className="page-wrap allies-layout"><div className="allies-copy"><p className="eyebrow">Trabajo colaborativo</p><h2 className="heading">Aliados estratégicos</h2><p className="body-copy">Construimos alianzas con organizaciones e instituciones que comparten el compromiso por una salud más humana, participativa y cercana.</p></div><div className="allies-logos" aria-label="Aliados estratégicos"><a className="ally-logo-slot" href="https://www.proshareapp.com" aria-label="Visitar ProShare"><img src={proshareLogo.src} alt="" /><span>ProShare</span></a></div></div></section>;
+  return <section className="section allies-section"><div className="page-wrap allies-layout"><div className="allies-copy"><p className="eyebrow">Trabajo colaborativo</p><h2 className="heading">Aliados estratégicos</h2><p className="body-copy">Construimos alianzas con organizaciones e instituciones que comparten el compromiso por una salud más humana, participativa y cercana.</p></div><div className="allies-logos" aria-label="Aliados estratégicos"><a className="ally-logo-slot" href="https://www.proshareapp.com" aria-label="Visitar ProShare"><img src={proshareLogo.src} alt="" /><span>ProShare</span></a>{strategicAllies.map((ally) => <div className="ally-logo-slot" key={ally.name}><img src={ally.image} alt={ally.name} /><span>{ally.name}</span></div>)}</div></div></section>;
 }
 
 export function PqrsSection() {

@@ -114,12 +114,13 @@
   max-width: 480px;
 }
 .allies-logos {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
   align-items: center;
 }
 .ally-logo-slot {
   display: flex;
-  width: min(100%, 420px);
   min-height: 116px;
   align-items: center;
   gap: 20px;
@@ -165,8 +166,14 @@
     gap: 32px;
     padding: 42px 0;
   }
+  .allies-logos {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 @media (max-width: 560px) {
+  .allies-logos {
+    grid-template-columns: 1fr;
+  }
   .ally-logo-slot {
     min-height: 96px;
     gap: 16px;
@@ -188,4 +195,3 @@
 .social-links a:hover { border-color: #fbb713; color: #fbb713; }
 
 /* Standalone registration landing inspired by the supplied event PDF */
-
