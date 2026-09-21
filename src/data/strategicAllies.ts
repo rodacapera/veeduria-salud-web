@@ -10,4 +10,5 @@ export const strategicAllies: StrategicAlly[] = [
   { name: "FRAPON", image: "/aliado-frapon.jpeg" },
   { name: "Distribuidora Majo", image: "/aliado-distribuidora-mariajo.jpeg" },
   { name: "Hospital Especializado Granja Integral", image: "/aliado-granja-integral.jpg" },
+  { name: "SIAT", image: "/aliado-siat.png" },
 ];
