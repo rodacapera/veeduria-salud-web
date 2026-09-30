@@ -14,7 +14,10 @@ export function RegistrationHero() {
           <img src={logo.src} alt="VEESIPP Colombia" />
           <img src="/logo-carlos-diaz-transparent.png" alt="Carlos Díaz Salud, Bienestar y Comunidad" />
           <img src="/logo-menteviva-transparent.png" alt="Menteviva" />
-          <img src={proshareLogo.src} alt="Proshare" />
+          <div className="ref-header-brand">
+            <img src={proshareLogo.src} alt="ProShare" />
+            <span>ProShare</span>
+          </div>
           <div className="ref-personeria">
             <img src={personeriaImage.src} alt="Personería de Ibagué" />
           </div>
@@ -236,7 +239,10 @@ export function RegistrationEventInfo() {
         <div className="ref-sponsors">
           <strong>Aliados y patrocinadores</strong>
           <div className="ref-sponsor-logos" aria-label="Aliados y patrocinadores">
-            <img src={proshareLogo.src} alt="ProShare" />
+            <div className="ref-sponsor-item">
+              <img src={proshareLogo.src} alt="ProShare" />
+              <span>ProShare</span>
+            </div>
             {strategicAllies.map((ally) => (
               <img key={ally.name} src={ally.image} alt={ally.name} />
             ))}
