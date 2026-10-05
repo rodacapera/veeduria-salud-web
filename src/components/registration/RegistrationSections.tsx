@@ -27,7 +27,7 @@ export function RegistrationHero() {
             <Reveal>
               <p className="ref-kicker">SALUD MENTAL</p>
               <p className="ref-location">
-                IBAGUÉ · COLOMBIA · 22 Y 23 DE OCTUBRE
+                IBAGUÉ · COLOMBIA · 28 Y 29 DE OCTUBRE
               </p>
               <h1>
                 Primer Congreso Nacional
@@ -225,7 +225,7 @@ export function RegistrationEventInfo() {
           <article>
             <span>▣</span>
             <p>
-              <b>22 y 23 de octubre de 2026.</b> Auditorio de la Universidad del
+              <b>28 y 29 de octubre de 2026.</b> Auditorio de la Universidad del
               Tolima, Sede Calle 10. Ibagué, Colombia.
             </p>
           </article>
